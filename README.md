@@ -1,5 +1,5 @@
 # Hi there 👋, I'm Mobarak Hossain Razu  
-### 🚀 Full-Stack Web Developer | Open Source Enthusiast  
+### 🚀 Full-Stack Web Developer 
 
 I'm a passionate **Full-Stack Web Developer** with expertise in building modern, responsive, and high-performance web applications. My tech stack includes **HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, and MongoDB**. I love crafting seamless user experiences and optimizing application performance.  
 

@@ -3,7 +3,7 @@
 
 I'm a passionate **Full-Stack Web Developer** with expertise in building modern, responsive, and high-performance web applications. My tech stack includes **HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, and MongoDB**. I love crafting seamless user experiences and optimizing application performance.
 
-## Checkout my website: https://mdmhrz.github.io/mdmhrz/
+#### Checkout my website: https://mdmhrz.github.io/mdmhrz/
 
 🔹 **Currently working on:** Enhancing my **MERN stack** project with new features and optimizations.  
 🔹 **Passionate about:** Open Source, problem-solving, and learning new technologies.  

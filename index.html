@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Anderson - Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#9333ea'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #3b82f6;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #3b82f6;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-['Pacifico'] text-primary hover:scale-105 transition-transform">John
+                    Anderson</a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home"
+                        class="px-4 py-2 text-gray-700 hover:text-primary hover:bg-primary/5 rounded-full transition-all relative group">
+                        Home
+                        <span
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    </a>
+                    <a href="#portfolio"
+                        class="px-4 py-2 text-gray-700 hover:text-primary hover:bg-primary/5 rounded-full transition-all relative group">
+                        Portfolio
+                        <span
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    </a>
+                    <a href="#skills"
+                        class="px-4 py-2 text-gray-700 hover:text-primary hover:bg-primary/5 rounded-full transition-all relative group">
+                        Skills
+                        <span
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    </a>
+                    <a href="#contact"
+                        class="px-4 py-2 text-gray-700 hover:text-primary hover:bg-primary/5 rounded-full transition-all relative group">
+                        Contact
+                        <span
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    </a>
+                    <button
+                        class="ml-4 bg-primary text-white px-6 py-2.5 !rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-md shadow-primary/20 whitespace-nowrap cursor-pointer flex items-center">
+                        <i class="ri-user-add-line mr-2"></i>
+                        Hire Me
+                    </button>
+                </div>
+                <button id="mobileMenuBtn"
+                    class="md:hidden text-gray-700 hover:text-primary transition-colors focus:outline-none">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="fixed inset-0 bg-white/95 backdrop-blur-md z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+                <div class="h-full flex flex-col">
+                    <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+                        <a href="#" class="text-2xl font-['Pacifico'] text-primary">John Anderson</a>
+                        <button id="mobileMenuCloseBtn"
+                            class="text-gray-700 hover:text-primary transition-colors focus:outline-none">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="flex-1 overflow-y-auto py-6">
+                        <div class="flex flex-col space-y-2 px-6">
+                            <a href="#home" class="mobile-menu-item">
+                                <i class="ri-home-line mr-3 text-xl"></i>
+                                <span>Home</span>
+                            </a>
+                            <a href="#portfolio" class="mobile-menu-item">
+                                <i class="ri-folder-line mr-3 text-xl"></i>
+                                <span>Portfolio</span>
+                            </a>
+                            <a href="#skills" class="mobile-menu-item">
+                                <i class="ri-tools-line mr-3 text-xl"></i>
+                                <span>Skills</span>
+                            </a>
+                            <a href="#contact" class="mobile-menu-item">
+                                <i class="ri-chat-1-line mr-3 text-xl"></i>
+                                <span>Contact</span>
+                            </a>
+                            <button
+                                class="mt-4 bg-primary text-white px-6 py-3 !rounded-full hover:bg-primary/90 transition-all shadow-md shadow-primary/20 whitespace-nowrap cursor-pointer flex items-center justify-center">
+                                <i class="ri-download-line mr-2"></i>
+                                Download CV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-gray-100">
+                        <div class="flex justify-center space-x-6">
+                            <a href="#" class="social-icon-mobile">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="#" class="social-icon-mobile">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#" class="social-icon-mobile">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" class="social-icon-mobile">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .mobile-menu-item {
+            @apply flex items-center px-4 py-3 text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all relative;
+        }
+
+        .social-icon-mobile {
+            @apply w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 text-primary hover:bg-primary hover:text-white transition-all;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+            function toggleMenu() {
+                const isOpen = mobileMenu.classList.contains('translate-x-0');
+                mobileMenu.classList.toggle('translate-x-0');
+                mobileMenu.classList.toggle('translate-x-full');
+                document.body.classList.toggle('menu-open');
+                if (!isOpen) {
+                    // Menu opening animation
+                    mobileMenuItems.forEach((item, index) => {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateX(20px)';
+                        setTimeout(() => {
+                            item.style.transition = 'all 0.3s ease-out';
+                            item.style.transitionDelay = `${index * 0.1}s`;
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateX(0)';
+                        }, 100);
+                    });
+                }
+            }
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+            mobileMenuCloseBtn.addEventListener('click', toggleMenu);
+            // Close menu when clicking menu items
+            mobileMenuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    toggleMenu();
+                });
+            });
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (mobileMenu.classList.contains('translate-x-0') &&
+                    !mobileMenu.contains(e.target) &&
+                    !mobileMenuBtn.contains(e.target)) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+    <section id="home"
+        class="pt-24 lg:pt-32 min-h-screen flex items-center relative overflow-hidden animate-fadeIn bg-gradient-to-br from-purple-50 via-white to-purple-100">
+        <div class="absolute inset-0">
+            <div
+                class="absolute inset-0 bg-[url('https://public.readdy.ai/ai/img_res/1e439eca11c81ca5108f3d0403bd47d9.jpg')] opacity-30 bg-cover bg-center">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-primary/10 to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 relative">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="space-y-6 lg:space-y-8">
+                    <div
+                        class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all">
+                        <span class="animate-pulse w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                        <span class="text-primary font-medium text-sm sm:text-base">Available for new projects</span>
+                    </div>
+                    <div class="space-y-4">
+                        <h1 id="typed-text"
+                            class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+                            <span
+                                class="bg-gradient-to-r from-primary via-purple-600 to-secondary bg-clip-text text-transparent animate-gradient">I'm
+                                a</span>
+                            <span class="typing-text text-gray-900"></span>
+                        </h1>
+                        <style>
+                            @keyframes gradient {
+                                0% {
+                                    background-position: 0% 50%;
+                                }
+
+                                50% {
+                                    background-position: 100% 50%;
+                                }
+
+                                100% {
+                                    background-position: 0% 50%;
+                                }
+                            }
+
+                            .animate-gradient {
+                                background-size: 200% auto;
+                                animation: gradient 3s linear infinite;
+                            }
+
+                            .typing-text::after {
+                                content: '|';
+                                animation: blink 1s infinite;
+                            }
+
+                            @keyframes blink {
+
+                                0%,
+                                100% {
+                                    opacity: 1;
+                                }
+
+                                50% {
+                                    opacity: 0;
+                                }
+                            }
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const texts = ['Web Developer', 'UI Designer', 'Problem Solver', 'Tech Enthusiast'];
+                                let textIndex = 0;
+                                let charIndex = 0;
+                                let isDeleting = false;
+                                const typingDelay = 100;
+                                const erasingDelay = 50;
+                                const newTextDelay = 2000;
+                                const typingElement = document.querySelector('.typing-text');
+                                function type() {
+                                    const currentText = texts[textIndex];
+                                    if (isDeleting) {
+                                        typingElement.textContent = currentText.substring(0, charIndex - 1);
+                                        charIndex--;
+                                    } else {
+                                        typingElement.textContent = currentText.substring(0, charIndex + 1);
+                                        charIndex++;
+                                    }
+                                    if (!isDeleting && charIndex === currentText.length) {
+                                        isDeleting = true;
+                                        setTimeout(type, newTextDelay);
+                                    } else if (isDeleting && charIndex === 0) {
+                                        isDeleting = false;
+                                        textIndex = (textIndex + 1) % texts.length;
+                                        setTimeout(type, typingDelay);
+                                    } else {
+                                        setTimeout(type, isDeleting ? erasingDelay : typingDelay);
+                                    }
+                                }
+                                setTimeout(type, newTextDelay);
+                            });
+                        </script>
+                    </div>
+                    <p
+                        class="text-lg sm:text-xl text-gray-700 leading-relaxed backdrop-blur-sm bg-white/30 p-6 rounded-xl shadow-lg">
+                        Hi, I'm John Anderson. A passionate Full Stack Web Developer based in New York with 8 years of
+                        experience in building exceptional digital experiences.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-stretch sm:items-center">
+                        <button
+                            class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg hover:shadow-primary/20 whitespace-nowrap cursor-pointer flex items-center">
+                            <span>Let's Connect</span>
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </button>
+                        <button
+                            class="border-2 border-primary text-primary px-8 py-4 !rounded-button hover:bg-primary/5 transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer flex items-center">
+                            <span>View Projects</span>
+                            <i class="ri-arrow-right-up-line ml-2"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 pt-8">
+                        <div class="flex items-center">
+                            <i class="ri-star-fill text-yellow-400 mr-2"></i>
+                            <div>
+                                <h4 class="font-bold text-2xl">150+</h4>
+                                <p class="text-gray-600">Projects Done</p>
+                            </div>
+                        </div>
+                        <div class="hidden sm:block w-px h-12 bg-gray-200"></div>
+                        <div class="flex items-center">
+                            <i class="ri-user-smile-fill text-green-400 mr-2"></i>
+                            <div>
+                                <h4 class="font-bold text-2xl">50+</h4>
+                                <p class="text-gray-600">Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-lg opacity-30 animate-pulse">
+                    </div>
+                    <img src="https://public.readdy.ai/ai/img_res/8c453ca611db617d7776afd6898a2885.jpg"
+                        alt="John Anderson"
+                        class="relative rounded-full w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover mx-auto shadow-2xl border-8 border-white">
+                    <div
+                        class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4">
+                        <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                        <span class="font-medium">Open to Opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="featured-projects"
+        class="py-20 bg-gradient-to-br from-white via-purple-50/30 to-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block">
+                    Featured Projects</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4"></div>
+                <p class="text-gray-600 text-lg mt-4">Some of my best work that I'm proud of</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div
+                    class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="https://public.readdy.ai/ai/img_res/82ceafcad5357e4ad13d942e68979393.jpg"
+                            alt="E-commerce Platform" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold">E-commerce Platform</h3>
+                                <p class="text-sm opacity-90">Full-stack e-commerce solution</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A modern e-commerce platform with advanced features including
+                            real-time inventory, secure payments, and analytics dashboard.</p>
+                        <div class="flex justify-between items-center">
+                            <button
+                                class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </button>
+                            <a href="#"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="https://public.readdy.ai/ai/img_res/2faf90b3a1a327ee5c3293f49211924a.jpg"
+                            alt="Fitness App" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold">FitTrack Pro</h3>
+                                <p class="text-sm opacity-90">Mobile Fitness Application</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React Native</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Firebase</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">GraphQL</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A comprehensive fitness tracking app with personalized workout
+                            plans, progress monitoring, and social features.</p>
+                        <div class="flex justify-between items-center">
+                            <button
+                                class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </button>
+                            <a href="#"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="https://public.readdy.ai/ai/img_res/e55ea2f40d920f115632dc0f42683b4a.jpg"
+                            alt="AI Task Manager" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold">TaskMaster AI</h3>
+                                <p class="text-sm opacity-90">AI-Powered Project Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Vue.js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">TensorFlow</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">An intelligent project management tool that uses AI to optimize
+                            task allocation and predict project timelines.</p>
+                        <div class="flex justify-between items-center">
+                            <button
+                                class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </button>
+                            <a href="#"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <button
+                    class="bg-white text-primary px-8 py-4 !rounded-button hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center mx-auto">
+                    <span>View All Projects</span>
+                    <i class="ri-arrow-right-line ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-32 bg-gradient-to-br from-white via-purple-50/30 to-white relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/5 to-secondary/5 rounded-full blur-3xl">
+        </div>
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block">
+                    About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4"></div>
+            </div>
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative animate-fadeIn">
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-200">
+                        </div>
+                        <img src="https://public.readdy.ai/ai/img_res/bd76985cc29d8c1a3b96de9aa2a9a615.jpg"
+                            alt="About John" class="relative rounded-2xl shadow-2xl w-full object-cover">
+                    </div>
+                    <div
+                        class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl backdrop-blur-sm bg-white/90">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="ri-code-box-line text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-bold text-lg">8+ Years</p>
+                                <p class="text-gray-600">Full Stack Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-8 animate-fadeIn">
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-bl-full">
+                        </div>
+                        <h3
+                            class="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            My Journey</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">With over 8 years of experience in web
+                            development, I've had the privilege of working with diverse clients and technologies. My
+                            journey in tech began during my college years at MIT, where I discovered my passion for
+                            creating innovative digital solutions.</p>
+                        <p class="text-gray-600 leading-relaxed">I believe in writing clean, efficient code and creating
+                            user-friendly interfaces that make a real impact. When I'm not coding, you'll find me
+                            mentoring junior developers and contributing to open-source projects.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow hover:-translate-y-1 duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                                <i class="ri-rocket-line text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-primary mb-2">150+</h3>
+                            <p class="text-gray-600">Projects Completed</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow hover:-translate-y-1 duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                                <i class="ri-user-smile-line text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-primary mb-2">50+</h3>
+                            <p class="text-gray-600">Happy Clients</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow hover:-translate-y-1 duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                                <i class="ri-award-line text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-primary mb-2">15+</h3>
+                            <p class="text-gray-600">Awards Won</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <button
+                            class="flex items-center justify-center gap-2 bg-primary/5 hover:bg-primary/10 text-primary font-medium py-4 px-6 rounded-xl transition-colors">
+                            <i class="ri-download-cloud-line"></i>
+                            Download Resume
+                        </button>
+                        <button
+                            class="flex items-center justify-center gap-2 bg-primary text-white font-medium py-4 px-6 rounded-xl hover:bg-primary/90 transition-colors">
+                            <i class="ri-send-plane-line"></i>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="journey" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-white to-secondary/5"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2
+                    class="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    My Journey</h2>
+                <p class="text-gray-600 text-lg">The path that led me to where I am today</p>
+            </div>
+            <div class="max-w-5xl mx-auto relative">
+                <div
+                    class="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary/20 via-primary/40 to-secondary/20 transform -translate-x-1/2">
+                </div>
+                <div class="space-y-24">
+                    <div class="journey-item group" data-year="2021">
+                        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                            <div class="journey-content md:text-right order-2 md:order-1">
+                                <div
+                                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
+                                    <div
+                                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500">
+                                    </div>
+                                    <span
+                                        class="inline-block text-sm font-semibold text-white bg-primary px-4 py-1 rounded-full mb-4">2021
+                                        - Present</span>
+                                    <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
+                                        Senior Full Stack Developer</h3>
+                                    <p class="text-gray-500 mb-2">Tech Solutions Inc.</p>
+                                    <div class="space-y-3 text-gray-600">
+                                        <div
+                                            class="achievement-item flex items-center justify-end gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <span>Led development team of 10+ members</span>
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-team-line text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="achievement-item flex items-center justify-end gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <span>Improved system efficiency by 40%</span>
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-speed-up-line text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="achievement-item flex items-center justify-end gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <span>Implemented microservices architecture</span>
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-cloud-line text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative order-1 md:order-2">
+                                <div
+                                    class="w-16 h-16 bg-white rounded-full border-4 border-primary flex items-center justify-center absolute left-1/2 md:left-0 -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <i class="ri-code-box-line text-primary text-2xl"></i>
+                                </div>
+                                <img src="https://public.readdy.ai/ai/img_res/57f730b1f8be36e2bdb73982cf3b0ef5.jpg"
+                                    alt="Tech Solutions Inc." class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-item group" data-year="2018">
+                        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                            <div class="relative">
+                                <div
+                                    class="w-16 h-16 bg-white rounded-full border-4 border-primary flex items-center justify-center absolute right-1/2 md:right-0 translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <i class="ri-stack-line text-primary text-2xl"></i>
+                                </div>
+                                <img src="https://public.readdy.ai/ai/img_res/08b87435708b2a2b9549b1c8485fbb38.jpg"
+                                    alt="Digital Innovations Co."
+                                    class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                            </div>
+                            <div class="journey-content">
+                                <div
+                                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
+                                    <div
+                                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500">
+                                    </div>
+                                    <span
+                                        class="inline-block text-sm font-semibold text-white bg-primary px-4 py-1 rounded-full mb-4">2018
+                                        - 2021</span>
+                                    <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">Full
+                                        Stack Developer</h3>
+                                    <p class="text-gray-500 mb-2">Digital Innovations Co.</p>
+                                    <div class="space-y-3 text-gray-600">
+                                        <div
+                                            class="achievement-item flex items-center gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-code-s-slash-line text-primary"></i>
+                                            </div>
+                                            <span>Developed 20+ client projects</span>
+                                        </div>
+                                        <div
+                                            class="achievement-item flex items-center gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-timer-flash-line text-primary"></i>
+                                            </div>
+                                            <span>Reduced loading times by 60%</span>
+                                        </div>
+                                        <div
+                                            class="achievement-item flex items-center gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-code-box-line text-primary"></i>
+                                            </div>
+                                            <span>Implemented Vue.js & Laravel solutions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-item group" data-year="2016">
+                        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                            <div class="journey-content md:text-right order-2 md:order-1">
+                                <div
+                                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
+                                    <div
+                                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500">
+                                    </div>
+                                    <span
+                                        class="inline-block text-sm font-semibold text-white bg-primary px-4 py-1 rounded-full mb-4">2016
+                                        - 2018</span>
+                                    <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
+                                        Frontend Developer</h3>
+                                    <p class="text-gray-500 mb-2">WebCraft Agency</p>
+                                    <div class="space-y-3 text-gray-600">
+                                        <div
+                                            class="achievement-item flex items-center justify-end gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <span>Created responsive web applications</span>
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-responsive-line text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="achievement-item flex items-center justify-end gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <span>Implemented modern UI/UX designs</span>
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-layout-line text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="achievement-item flex items-center justify-end gap-3 opacity-0 transform translate-y-4 transition-all duration-300 cursor-pointer hover:text-primary">
+                                            <span>Optimized frontend performance</span>
+                                            <div
+                                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                                <i class="ri-speed-line text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative order-1 md:order-2">
+                                <div
+                                    class="w-16 h-16 bg-white rounded-full border-4 border-primary flex items-center justify-center absolute left-1/2 md:left-0 -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <i class="ri-layout-2-line text-primary text-2xl"></i>
+                                </div>
+                                <img src="https://public.readdy.ai/ai/img_res/594f8dd73f6ad81803035afdd45315ac.jpg"
+                                    alt="WebCraft Agency" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 text-center">
+                    <button
+                        class="bg-white text-primary px-8 py-4 !rounded-button hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center mx-auto">
+                        <span>View Full Resume</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <style>
+            .journey-item {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: all 0.6s ease-out;
+            }
+
+            .journey-item.animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .achievement-item {
+                transition-delay: 0.2s;
+            }
+
+            .journey-item:hover .achievement-item {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .journey-item:hover .achievement-item:nth-child(2) {
+                transition-delay: 0.3s;
+            }
+
+            .journey-item:hover .achievement-item:nth-child(3) {
+                transition-delay: 0.4s;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const journeyItems = document.querySelectorAll('.journey-item');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate');
+                        }
+                    });
+                }, {
+                    threshold: 0.2
+                });
+                journeyItems.forEach(item => {
+                    observer.observe(item);
+                });
+            });
+        </script>
+    </section>
+    <section id="personal"
+        class="py-20 bg-gradient-to-br from-white via-purple-50/30 to-white relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/5 to-secondary/5 rounded-full blur-3xl">
+        </div>
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block">
+                    Life Beyond Code</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4"></div>
+                <p class="text-gray-600 text-lg mt-4">Exploring the world, one adventure at a time</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div
+                    class="hobby-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-camera-lens-line text-primary text-3xl group-hover:rotate-180 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-20 rounded-2xl blur transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <h3
+                        class="text-xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Adventure Seeker</h3>
+                    <p class="text-gray-600">Exploring mountains and capturing moments through photography.</p>
+                    <div
+                        class="mt-4 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                        <span class="text-sm font-medium">View Gallery</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </div>
+                </div>
+                <div
+                    class="hobby-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-brain-line text-primary text-3xl group-hover:rotate-180 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-20 rounded-2xl blur transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <h3
+                        class="text-xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Lifelong Learner</h3>
+                    <p class="text-gray-600">Exploring AI & Machine Learning technologies.</p>
+                    <div
+                        class="mt-4 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                        <span class="text-sm font-medium">Learn More</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </div>
+                </div>
+                <div
+                    class="hobby-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-music-2-line text-primary text-3xl group-hover:rotate-180 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-20 rounded-2xl blur transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <h3
+                        class="text-xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Music Enthusiast</h3>
+                    <p class="text-gray-600">Classical pianist and digital music composer.</p>
+                    <div
+                        class="mt-4 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                        <span class="text-sm font-medium">Listen Now</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </div>
+                </div>
+                <div
+                    class="hobby-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-plant-line text-primary text-3xl group-hover:rotate-180 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-20 rounded-2xl blur transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <h3
+                        class="text-xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Urban Gardener</h3>
+                    <p class="text-gray-600">Growing herbs and vegetables in my balcony garden.</p>
+                    <div
+                        class="mt-4 flex items-center text-primary opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                        <span class="text-sm font-medium">Garden Tour</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const hobbyCards = document.querySelectorAll('.hobby-card');
+                    hobbyCards.forEach(card => {
+                        card.addEventListener('mouseenter', () => {
+                            card.querySelector('i').classList.add('animate-spin-slow');
+                        });
+                        card.addEventListener('mouseleave', () => {
+                            card.querySelector('i').classList.remove('animate-spin-slow');
+                        });
+                        card.addEventListener('click', () => {
+                            // Add a subtle click animation
+                            card.classList.add('scale-95');
+                            setTimeout(() => {
+                                card.classList.remove('scale-95');
+                            }, 200);
+                            // Show a custom tooltip
+                            const tooltip = document.createElement('div');
+                            tooltip.className = 'fixed top-4 right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg transform transition-all duration-300';
+                            tooltip.textContent = 'Coming soon!';
+                            document.body.appendChild(tooltip);
+                            setTimeout(() => {
+                                tooltip.remove();
+                            }, 2000);
+                        });
+                    });
+                });
+            </script>
+            <style>
+                @keyframes spin-slow {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                .animate-spin-slow {
+                    animation: spin-slow 2s linear infinite;
+                }
+            </style>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="stat-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="flex items-center justify-between mb-8">
+                        <div
+                            class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-map-pin-line text-primary text-2xl group-hover:rotate-bounce transition-transform duration-500"></i>
+                        </div>
+                        <div class="relative w-24 h-24">
+                            <svg class="transform rotate-[-90deg]" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#f3f4f6" stroke-width="8" />
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="8"
+                                    stroke-dasharray="283" stroke-dashoffset="70" class="progress-circle" />
+                            </svg>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center text-xl font-bold text-primary">
+                                75%</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Countries Visited</h3>
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            25+</div>
+                        <span class="text-gray-400 text-sm">Goal: 35</span>
+                    </div>
+                    <p class="text-gray-600 mt-4">Exploring diverse cultures worldwide.</p>
+                </div>
+                <div
+                    class="stat-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="flex items-center justify-between mb-8">
+                        <div
+                            class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-article-line text-primary text-2xl group-hover:rotate-bounce transition-transform duration-500"></i>
+                        </div>
+                        <div class="relative w-24 h-24">
+                            <svg class="transform rotate-[-90deg]" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#f3f4f6" stroke-width="8" />
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="8"
+                                    stroke-dasharray="283" stroke-dashoffset="42" class="progress-circle" />
+                            </svg>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center text-xl font-bold text-primary">
+                                85%</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Blog Readers</h3>
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            10k+</div>
+                        <span class="text-gray-400 text-sm">Goal: 12k</span>
+                    </div>
+                    <p class="text-gray-600 mt-4">Monthly tech blog subscribers.</p>
+                </div>
+                <div
+                    class="stat-card group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <div class="flex items-center justify-between mb-8">
+                        <div
+                            class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="ri-trophy-line text-primary text-2xl group-hover:rotate-bounce transition-transform duration-500"></i>
+                        </div>
+                        <div class="relative w-24 h-24">
+                            <svg class="transform rotate-[-90deg]" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#f3f4f6" stroke-width="8" />
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="8"
+                                    stroke-dasharray="283" stroke-dashoffset="0" class="progress-circle" />
+                            </svg>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center text-xl font-bold text-primary">
+                                100%</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Achievements</h3>
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            15+</div>
+                        <span class="text-gray-400 text-sm">Goal: 15</span>
+                    </div>
+                    <p class="text-gray-600 mt-4">Tech & community awards earned.</p>
+                </div>
+            </div>
+            <style>
+                @keyframes rotate-bounce {
+
+                    0%,
+                    100% {
+                        transform: rotate(0deg);
+                    }
+
+                    25% {
+                        transform: rotate(90deg);
+                    }
+
+                    50% {
+                        transform: rotate(180deg);
+                    }
+
+                    75% {
+                        transform: rotate(270deg);
+                    }
+                }
+
+                .rotate-bounce {
+                    animation: rotate-bounce 1.5s ease-in-out;
+                }
+
+                .progress-circle {
+                    transition: stroke-dashoffset 1s ease-in-out;
+                }
+
+                .stat-card:hover .progress-circle {
+                    animation: progress-pulse 2s ease-in-out infinite;
+                }
+
+                @keyframes progress-pulse {
+
+                    0%,
+                    100% {
+                        transform: scale(1) rotate(-90deg);
+                    }
+
+                    50% {
+                        transform: scale(1.05) rotate(-90deg);
+                    }
+                }
+
+                defs {
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: #7c3aed" /><stop offset="100%" style="stop-color: #9333ea" /></linearGradient>
+                }
+            </style>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const statCards = document.querySelectorAll('.stat-card');
+                    statCards.forEach(card => {
+                        card.addEventListener('mouseenter', () => {
+                            const icon = card.querySelector('i');
+                            icon.classList.add('rotate-bounce');
+                            setTimeout(() => {
+                                icon.classList.remove('rotate-bounce');
+                            }, 1500);
+                        });
+                        card.addEventListener('click', () => {
+                            card.classList.add('scale-95');
+                            setTimeout(() => {
+                                card.classList.remove('scale-95');
+                            }, 200);
+                            const tooltip = document.createElement('div');
+                            tooltip.className = 'fixed top-4 right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg transform transition-all duration-300';
+                            tooltip.textContent = 'View detailed statistics';
+                            document.body.appendChild(tooltip);
+                            setTimeout(() => {
+                                tooltip.remove();
+                            }, 2000);
+                        });
+                    });
+                });
+            </script>
+        </div>
+    </section>
+    <section id="skills" class="py-20 relative overflow-hidden bg-gradient-to-br from-white via-purple-50/30 to-white">
+        <div class="absolute inset-0">
+            <div
+                class="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/5 to-secondary/5 rounded-full blur-3xl">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 rounded-full blur-3xl">
+            </div>
+        </div>
+        <div class="container mx-auto px-6 relative">
+            <h2
+                class="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Skills & Expertise</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4"></div>
+            <p class="text-gray-600 text-center mt-4 mb-12">Technologies I work with</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-8 flex items-center">
+                        <i class="ri-code-line text-primary text-2xl mr-3"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-reactjs-line text-blue-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">React</span>
+                                </div>
+                                <span class="text-primary font-semibold">95%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-vuejs-line text-green-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">Vue.js</span>
+                                </div>
+                                <span class="text-primary font-semibold">90%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-css3-line text-purple-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">CSS/SASS</span>
+                                </div>
+                                <span class="text-primary font-semibold">85%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-8 flex items-center">
+                        <i class="ri-server-line text-primary text-2xl mr-3"></i>
+                        Backend Development
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-nodejs-line text-green-600 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">Node.js</span>
+                                </div>
+                                <span class="text-primary font-semibold">90%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-green-500 to-green-700 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-python-line text-yellow-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">Python</span>
+                                </div>
+                                <span class="text-primary font-semibold">80%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-code-s-slash-line text-indigo-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">PHP</span>
+                                </div>
+                                <span class="text-primary font-semibold">75%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-8 flex items-center">
+                        <i class="ri-tools-line text-primary text-2xl mr-3"></i>
+                        Tools & Others
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-git-branch-line text-orange-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">Git</span>
+                                </div>
+                                <span class="text-primary font-semibold">95%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-orange-400 to-orange-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-docker-line text-blue-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">Docker</span>
+                                </div>
+                                <span class="text-primary font-semibold">85%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <i class="ri-cloud-line text-yellow-500 text-xl mr-2"></i>
+                                    <span class="text-gray-700 font-medium">AWS</span>
+                                </div>
+                                <span class="text-primary font-semibold">80%</span>
+                            </div>
+                            <div class="relative h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="skill-bar absolute top-0 left-0 h-full bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full transition-all duration-1000"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2
+                    class="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Get In Touch</h2>
+                <p class="text-gray-600 text-lg">Let's collaborate and bring your ideas to life</p>
+            </div>
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                <div
+                    class="md:col-span-5 bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-bl-full">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-8 relative">Contact Information</h3>
+                    <div class="space-y-6 relative">
+                        <div class="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mr-4">
+                                <i class="ri-mail-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Email</p>
+                                <p class="font-medium text-gray-900">john.anderson@example.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mr-4">
+                                <i class="ri-phone-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Phone</p>
+                                <p class="font-medium text-gray-900">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mr-4">
+                                <i class="ri-map-pin-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Location</p>
+                                <p class="font-medium text-gray-900">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 relative">
+                        <h4 class="text-xl font-bold mb-6">Connect With Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all group">
+                                <i class="ri-github-line text-primary group-hover:text-white text-xl"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all group">
+                                <i class="ri-linkedin-line text-primary group-hover:text-white text-xl"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all group">
+                                <i class="ri-twitter-line text-primary group-hover:text-white text-xl"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all group">
+                                <i class="ri-instagram-line text-primary group-hover:text-white text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm"
+                    class="md:col-span-7 bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" for="name">Full Name</label>
+                            <div class="relative">
+                                <i class="ri-user-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                <input type="text" id="name"
+                                    class="w-full pl-12 pr-4 py-3 bg-gray-50 border-none rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 text-gray-900"
+                                    placeholder="John Doe" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email
+                                Address</label>
+                            <div class="relative">
+                                <i class="ri-mail-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                <input type="email" id="email"
+                                    class="w-full pl-12 pr-4 py-3 bg-gray-50 border-none rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 text-gray-900"
+                                    placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-sm font-medium text-gray-700 mb-2" for="subject">Subject</label>
+                        <div class="relative">
+                            <i class="ri-chat-1-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                            <input type="text" id="subject"
+                                class="w-full pl-12 pr-4 py-3 bg-gray-50 border-none rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 text-gray-900"
+                                placeholder="What's this about?" required>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-sm font-medium text-gray-700 mb-2" for="message">Message</label>
+                        <div class="relative">
+                            <i class="ri-message-3-line absolute left-4 top-4 text-gray-400"></i>
+                            <textarea id="message" rows="6"
+                                class="w-full pl-12 pr-4 py-3 bg-gray-50 border-none rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 text-gray-900"
+                                placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-4 !rounded-xl hover:bg-primary/90 transition-colors cursor-pointer flex items-center justify-center space-x-2 text-lg font-medium">
+                        <span>Send Message</span>
+                        <i class="ri-send-plane-line"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary opacity-30">
+        </div>
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+        </div>
+        <div class="container mx-auto px-6 relative">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4 space-y-6">
+                    <h3 class="text-3xl font-['Pacifico'] text-white mb-4">John Anderson</h3>
+                    <p class="text-gray-400 leading-relaxed">Crafting digital experiences through clean and efficient
+                        code. Let's work together to bring your ideas to life.</p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-github-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-linkedin-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-twitter-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-instagram-fill text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#home"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Home</a></li>
+                        <li><a href="#portfolio"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Portfolio</a></li>
+                        <li><a href="#skills"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Skills</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-6">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-code-s-slash-line mr-2"></i>Web Development</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-smartphone-line mr-2"></i>Mobile Development</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-layout-2-line mr-2"></i>UI/UX Design</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-lightbulb-line mr-2"></i>Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-4">
+                    <h4 class="text-lg font-semibold text-white mb-6">Stay Updated</h4>
+                    <p class="text-gray-400 mb-6">Subscribe to my newsletter for the latest updates, insights, and
+                        special offers.</p>
+                    <form id="newsletterForm" class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Enter your email"
+                                class="w-full px-6 py-4 bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-white placeholder-gray-400">
+                            <button type="submit"
+                                class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer flex items-center">
+                                Subscribe <i class="ri-send-plane-line ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/10">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <p class="text-gray-400 text-center md:text-left">&copy; 2025 John Anderson. All rights reserved.
+                    </p>
+                    <div class="flex justify-center md:justify-end space-x-6 text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Services</a>
+                        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 transition-opacity duration-300 cursor-pointer">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('a') && !e.target.closest('button')) {
+                        const detailsBtn = card.querySelector('button');
+                        detailsBtn.click();
+                    }
+                });
+                const detailsBtn = card.querySelector('button');
+                detailsBtn.addEventListener('click', () => {
+                    const projectTitle = card.querySelector('h3').textContent;
+                    const projectDesc = card.querySelector('p').textContent;
+                    const technologies = Array.from(card.querySelectorAll('.flex-wrap span')).map(span => span.textContent);
+                    const modal = document.createElement('div');
+                    modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50';
+                    modal.innerHTML = `
+<div class="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 transform transition-all">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold">${projectTitle}</h3>
+<button class="text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-2xl"></i>
+</button>
+</div>
+<div class="space-y-4">
+<img src="${card.querySelector('img').src}" class="w-full h-64 object-cover rounded-xl" alt="${projectTitle}">
+<p class="text-gray-600">${projectDesc}</p>
+<div class="flex flex-wrap gap-2">
+${technologies.map(tech => `<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">${tech}</span>`).join('')}
+</div>
+<div class="flex justify-between items-center mt-6 pt-6 border-t">
+<a href="#" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors">Live Demo</a>
+<a href="#" class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+View Source <i class="ri-github-line"></i>
+</a>
+</div>
+</div>
+</div>
+`;
+                    document.body.appendChild(modal);
+                    modal.querySelector('button').addEventListener('click', () => {
+                        modal.remove();
+                    });
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.remove();
+                        }
+                    });
+                });
+            });
+            const animateElements = document.querySelectorAll('.animate-fadeIn');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            animateElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                observer.observe(element);
+            });
+            const backToTop = document.getElementById('backToTop');
+            const contactForm = document.getElementById('contactForm');
+            const newsletterForm = document.getElementById('newsletterForm');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTop.style.opacity = '1';
+                } else {
+                    backToTop.style.opacity = '0';
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            const skillObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const parent = bar.closest('.skill-item');
+                        const percentage = parent.querySelector('.text-primary').textContent.replace('%', '');
+                        bar.style.width = percentage + '%';
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+                bar.style.width = '0%';
+                skillObserver.observe(bar);
+            });
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+                console.log('Form submitted:', data);
+                const successMessage = document.createElement('div');
+                successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg';
+                successMessage.textContent = 'Message sent successfully!';
+                document.body.appendChild(successMessage);
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 3000);
+                contactForm.reset();
+            });
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = newsletterForm.querySelector('input[type="email"]').value;
+                console.log('Newsletter subscription:', email);
+                const successMessage = document.createElement('div');
+                successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg';
+                successMessage.textContent = 'Successfully subscribed to newsletter!';
+                document.body.appendChild(successMessage);
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 3000);
+                newsletterForm.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>

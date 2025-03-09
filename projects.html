@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobarak Hossain - Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#9333ea'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html"
+                    data-readdy="true"
+                    class="text-2xl font-['Pacifico'] text-primary hover:scale-105 transition-transform">Mobarak Hossain</a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html"
+                        data-readdy="true"
+                        class="px-4 py-2 text-gray-700 hover:text-primary hover:bg-primary/5 rounded-full transition-all relative group">
+                        Home
+                        <span
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    </a>
+                    <a href="#" class="px-4 py-2 text-primary bg-primary/5 rounded-full transition-all relative group">
+                        Projects
+                        <span
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full opacity-100 transition-opacity"></span>
+                    </a>
+                    <button
+                        class="ml-4 bg-primary text-white px-6 py-2.5 !rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-md shadow-primary/20 whitespace-nowrap cursor-pointer flex items-center">
+                        <i class="ri-user-add-line mr-2"></i>
+                        Hire Me
+                    </button>
+                </div>
+                <button id="mobileMenuBtn"
+                    class="md:hidden text-gray-700 hover:text-primary transition-colors focus:outline-none">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-24">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center space-x-2 text-sm text-gray-500 mb-8">
+                <a href="index.html"
+                    data-readdy="true" class="hover:text-primary transition-colors">Home</a>
+                <i class="ri-arrow-right-s-line"></i>
+                <span class="text-primary">Projects</span>
+            </div>
+
+            <div class="text-center mb-16">
+                <h1
+                    class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-6">
+                    My Projects</h1>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">Explore my portfolio of web development projects,
+                    featuring modern technologies and creative solutions.</p>
+            </div>
+
+            <div class="mb-12">
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
+                    <button
+                        class="px-6 py-2 bg-primary text-white !rounded-full shadow-md shadow-primary/20 hover:shadow-lg transition-all whitespace-nowrap cursor-pointer">
+                        All Projects
+                    </button>
+                    <button
+                        class="px-6 py-2 bg-white text-gray-700 !rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all whitespace-nowrap cursor-pointer">
+                        Web Development
+                    </button>
+                    <button
+                        class="px-6 py-2 bg-white text-gray-700 !rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all whitespace-nowrap cursor-pointer">
+                        Mobile Apps
+                    </button>
+                    <button
+                        class="px-6 py-2 bg-white text-gray-700 !rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all whitespace-nowrap cursor-pointer">
+                        UI/UX Design
+                    </button>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center max-w-md mx-auto bg-white rounded-full shadow-md mb-12">
+                        <input type="text" placeholder="Search projects..."
+                            class="w-full px-6 py-3 bg-transparent border-none focus:outline-none text-gray-700">
+                        <button class="px-6 py-3 text-gray-400 hover:text-primary transition-colors cursor-pointer">
+                            <i class="ri-search-line text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="relative h-64">
+                            <img src="https://public.readdy.ai/ai/img_res/d4a5ebd65f8d2cabc7ff882badc9d3b8.jpg"
+                                alt="E-commerce Platform" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-bold">E-commerce Platform</h3>
+                                    <p class="text-sm opacity-90">Full-stack e-commerce solution</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Node.js</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">MongoDB</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">A modern e-commerce platform with advanced features including
+                                real-time inventory, secure payments, and analytics dashboard.</p>
+                            <div class="flex justify-between items-center">
+                                <button
+                                    class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2 cursor-pointer">
+                                    View Details <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="relative h-64">
+                            <img src="https://public.readdy.ai/ai/img_res/f486514f512b22606f1f5783930fbcd2.jpg"
+                                alt="Fitness App" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-bold">FitTrack Pro</h3>
+                                    <p class="text-sm opacity-90">Mobile Fitness Application</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React
+                                    Native</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Firebase</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">GraphQL</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">A comprehensive fitness tracking app with personalized workout
+                                plans, progress monitoring, and social features.</p>
+                            <div class="flex justify-between items-center">
+                                <button
+                                    class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2 cursor-pointer">
+                                    View Details <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="relative h-64">
+                            <img src="https://public.readdy.ai/ai/img_res/7fee4724de4b156a3318f6021f6e6c89.jpg"
+                                alt="AI Task Manager" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-bold">TaskMaster AI</h3>
+                                    <p class="text-sm opacity-90">AI-Powered Project Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Vue.js</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Python</span>
+                                <span
+                                    class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">TensorFlow</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">An intelligent project management tool that uses AI to
+                                optimize task allocation and predict project timelines.</p>
+                            <div class="flex justify-between items-center">
+                                <button
+                                    class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2 cursor-pointer">
+                                    View Details <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="relative h-64">
+                            <img src="https://public.readdy.ai/ai/img_res/1d7ef11aaf2d53a4902aa45edcaa682e.jpg"
+                                alt="Smart Home Hub" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-bold">Smart Home Hub</h3>
+                                    <p class="text-sm opacity-90">IoT Control Center</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Node.js</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">MQTT</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">A centralized smart home control system with real-time device
+                                monitoring, automation rules, and energy analytics.</p>
+                            <div class="flex justify-between items-center">
+                                <button
+                                    class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2 cursor-pointer">
+                                    View Details <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="relative h-64">
+                            <img src="https://public.readdy.ai/ai/img_res/33c91dfe5a4c6d5db1963b9121ccfc9c.jpg"
+                                alt="Social Analytics" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-bold">Social Analytics</h3>
+                                    <p class="text-sm opacity-90">Social Media Dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Angular</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Django</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Redis</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Advanced social media analytics platform with real-time
+                                metrics, sentiment analysis, and automated reporting.</p>
+                            <div class="flex justify-between items-center">
+                                <button
+                                    class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2 cursor-pointer">
+                                    View Details <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="relative h-64">
+                            <img src="https://public.readdy.ai/ai/img_res/9c664310f3ce2d380b936845a37dc912.jpg"
+                                alt="EduTech Platform" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white">
+                                    <h3 class="text-xl font-bold">EduTech Platform</h3>
+                                    <p class="text-sm opacity-90">Online Learning System</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Next.js</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Express</span>
+                                <span
+                                    class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">PostgreSQL</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Comprehensive e-learning platform with interactive courses,
+                                progress tracking, and real-time collaboration tools.</p>
+                            <div class="flex justify-between items-center">
+                                <button
+                                    class="text-primary hover:text-primary/80 transition-colors flex items-center gap-2 cursor-pointer">
+                                    View Details <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-xl hover:bg-primary hover:text-white transition-all">
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-12">
+                    <button
+                        class="bg-white text-primary border-2 border-primary px-8 py-4 !rounded-button hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center mx-auto whitespace-nowrap cursor-pointer">
+                        <span>Load More Projects</span>
+                        <i class="ri-arrow-down-line ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projectModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-8 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold"></h3>
+                <button class="text-gray-500 hover:text-gray-700 cursor-pointer">
+                    <i class="ri-close-line text-2xl"></i>
+                </button>
+            </div>
+            <div class="space-y-6">
+                <img src="" class="w-full h-80 object-cover rounded-xl" alt="">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Project Overview</h4>
+                        <p class="text-gray-600"></p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Technical Details</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2">
+                                <i class="ri-code-s-slash-line text-primary"></i>
+                                <span class="text-gray-600">Technologies Used:</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 technologies"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t pt-6">
+                    <h4 class="text-lg font-semibold mb-4">Key Features</h4>
+                    <ul class="grid md:grid-cols-2 gap-4 features"></ul>
+                </div>
+                <div class="border-t pt-6">
+                    <h4 class="text-lg font-semibold mb-4">Project Gallery</h4>
+                    <div class="grid grid-cols-2 gap-4 gallery"></div>
+                </div>
+                <div class="flex justify-between items-center mt-8 pt-6 border-t">
+                    <a href="#"
+                        class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer flex items-center gap-2">
+                        <i class="ri-eye-line"></i>
+                        Live Demo
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors flex items-center gap-2">
+                            <i class="ri-github-line"></i>
+                            Source Code
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors flex items-center gap-2">
+                            <i class="ri-share-line"></i>
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary opacity-30">
+        </div>
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+        </div>
+        <div class="container mx-auto px-6 relative">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4 space-y-6">
+                    <h3 class="text-3xl font-['Pacifico'] text-white mb-4">Mobarak Hossain</h3>
+                    <p class="text-gray-400 leading-relaxed">Crafting digital experiences through clean and efficient
+                        code. Let's work together to bring your ideas to life.</p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-github-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-linkedin-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-twitter-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary hover:scale-110 transition-all duration-300">
+                            <i class="ri-instagram-fill text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#home"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Home</a></li>
+                        <li><a href="#portfolio"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Portfolio</a></li>
+                        <li><a href="#skills"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Skills</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-arrow-right-s-line mr-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-6">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-code-s-slash-line mr-2"></i>Web Development</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-smartphone-line mr-2"></i>Mobile Development</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-layout-2-line mr-2"></i>UI/UX Design</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center"><i
+                                    class="ri-lightbulb-line mr-2"></i>Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-4">
+                    <h4 class="text-lg font-semibold text-white mb-6">Stay Updated</h4>
+                    <p class="text-gray-400 mb-6">Subscribe to my newsletter for the latest updates, insights, and
+                        special offers.</p>
+                    <form id="newsletterForm" class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Enter your email"
+                                class="w-full px-6 py-4 bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-white placeholder-gray-400">
+                            <button type="submit"
+                                class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer flex items-center">
+                                Subscribe <i class="ri-send-plane-line ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/10">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <p class="text-gray-400 text-center md:text-left">&copy; 2025 Mobarak Hossain. All rights reserved.
+                    </p>
+                    <div class="flex justify-center md:justify-end space-x-6 text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="./scripts/projects.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+
+</html>

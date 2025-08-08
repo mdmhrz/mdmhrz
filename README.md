@@ -64,7 +64,7 @@ I’m committed to continuous learning and staying current with the evolving web
 
 <p align="center">
 
-  <img src="https://streak-stats.demolab.com?user=mdmhrz&theme=tokyonight" alt="GitHub Streak" height="180px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=dark" alt="GitHub Streak" height="180px" />
 
 </p>
 

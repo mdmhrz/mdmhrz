@@ -50,7 +50,7 @@ I'm a passionate **Full-Stack Web Developer** with expertise in building modern,
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=default" alt="Top Languages" height="180px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=dark" alt="Top Languages" height="180px"/>
 </p>
 
 ---

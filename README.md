@@ -66,12 +66,7 @@ I’m committed to continuous learning and staying current with the evolving web
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=dark" alt="Top Languages" height="180px"/>
 </p>
 
----
 
-### 🏆 GitHub Trophies  
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mdmhrz&theme=flat&row=1&column=7" alt="GitHub Trophies" />
-</p>
 
 ---
 

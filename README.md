@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/mdmhrz/portfolio-assets/refs/heads/main/banner.svg" />
 </a>
 
-<br>
+
 Hi, I’m a passionate **Full-Stack Web Developer** with a strong focus on crafting **modern**, **responsive**, and **high-performance** web applications that deliver seamless user experiences. I specialize in building scalable solutions using the latest technologies in the web development ecosystem. From designing intuitive user interfaces with React and Tailwind CSS to creating clean, maintainable code, I aim to optimize applications for speed and accessibility.
 
 I thrive on continuous learning and staying up-to-date with emerging trends and best practices. Whether it's collaborating with teams to bring ideas to life or contributing to open-source projects, I’m driven by the goal of building impactful software that solves real-world problems and delights users.

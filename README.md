@@ -38,6 +38,11 @@ Hi, I'm a passionate **Full-Stack Web Developer** with expertise in building mod
 
 
 ---
+## Skills
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,mongodb,redux,tailwind,bootstrap,git,github,vercel,netlify,figma,python)](https://skillicons.dev)
+
+
+
 
 ### 🌱 Currently Learning  
 - **Advanced Next.js** for building scalable and performant React applications.  

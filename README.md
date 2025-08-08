@@ -3,7 +3,12 @@
 </a>
 
 
-I'm a passionate **Full-Stack Web Developer** with expertise in building modern, responsive, and high-performance web applications. My tech stack includes **HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, and MongoDB**. I love crafting seamless user experiences and optimizing application performance.
+Hi, I'm a passionate **Full-Stack Web Developer** with expertise in building modern, responsive, and high-performance web applications. My tech stack includes **HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, and MongoDB**. I love crafting seamless user experiences and optimizing application performance.
+
+### About Me
+- Passionate about building performant and accessible web apps
+- Open-source contributor and lifelong learner
+- Interested in UI/UX and frontend architecture
 
 #### Checkout my website: https://razu-portfolio.netlify.app/
 

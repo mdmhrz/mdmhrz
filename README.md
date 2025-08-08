@@ -2,9 +2,8 @@
 <img src="https://raw.githubusercontent.com/mdmhrz/portfolio-assets/refs/heads/main/banner.svg" />
 </a>
 
-# Hi, I'm __Mobarak Hossain Razu__
 
-I’m a passionate **Full-Stack Web Developer** specializing in building **modern**, **responsive**, and **high-performance** web applications.  
+Hi, I’m a passionate **Full-Stack Web Developer** specializing in building **modern**, **responsive**, and **high-performance** web applications.  
 My tech stack includes:  
 **HTML | CSS | JavaScript | React | Tailwind CSS | Node.js | Express.js | MongoDB**
 

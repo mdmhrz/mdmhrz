@@ -3,9 +3,16 @@
 </a>
 
 
-Hi, I’m a passionate **Full-Stack Web Developer** specializing in building **modern**, **responsive**, and **high-performance** web applications.  
+Hi, I’m a passionate **Full-Stack Web Developer** with a strong focus on crafting **modern**, **responsive**, and **high-performance** web applications that deliver seamless user experiences. I specialize in building scalable solutions using the latest technologies in the web development ecosystem.  
+
+My expertise lies in both frontend and backend development — from designing intuitive user interfaces with React and Tailwind CSS to building robust server-side applications using Node.js, Express, and MongoDB. I take pride in writing clean, maintainable code and optimizing applications for speed and accessibility.
+
+With a continuous learning mindset, I stay updated with emerging trends and best practices to create innovative solutions that solve real-world problems. I enjoy collaborating with cross-functional teams to bring ideas to life and contribute to the open-source community whenever possible.
+
+Whether it’s enhancing user experiences, improving performance, or architecting complex features, I am driven by a passion to build impactful software that users love.
+
 My tech stack includes:  
-**HTML | CSS | JavaScript | React | Tailwind CSS | Node.js | Express.js | MongoDB**
+**HTML | CSS | JavaScript | React | Next.JS | Tailwind CSS | Node.js | Express.js | MongoDB**
 
 ---
 

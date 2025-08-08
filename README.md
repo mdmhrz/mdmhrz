@@ -1,20 +1,30 @@
 <a target='_blank' href="https://www.linkedin.com/in/mdmhrz">
 <img src="https://raw.githubusercontent.com/mdmhrz/portfolio-assets/refs/heads/main/banner.svg" />
 </a>
+# Hi, I'm **Mobarak Hossain Razu** 👋
 
+I’m a passionate **Full-Stack Web Developer** specializing in building **modern**, **responsive**, and **high-performance** web applications.  
+My tech stack includes:  
+**HTML | CSS | JavaScript | React | Tailwind CSS | Node.js | Express.js | MongoDB**
 
-Hi, I'm a passionate **Full-Stack Web Developer** with expertise in building modern, responsive, and high-performance web applications. My tech stack includes **HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, and MongoDB**. I love crafting seamless user experiences and optimizing application performance.
+---
 
-### About Me
-- Passionate about building performant and accessible web apps
-- Open-source contributor and lifelong learner
-- Interested in UI/UX and frontend architecture
+### 🚀 About Me
+- 💡 **Passionate** about building performant and accessible web apps  
+- 🌱 Active **open-source contributor** and lifelong learner  
+- 🎨 Strong interest in **UI/UX design** and frontend architecture  
 
-#### Checkout my website: https://razu-portfolio.netlify.app/
+---
 
-🔹 **Currently working on:** Enhancing my **MERN stack** project with new features and optimizations.  
-🔹 **Passionate about:** Open Source, problem-solving, and learning new technologies.  
-🔹 **Looking forward to:** Collaborating on exciting projects and contributing to the developer community.  
+### 🔗 [Checkout my portfolio website](https://razu-portfolio.netlify.app/)  
+
+---
+
+### 🔥 What I’m up to  
+- **Currently working on:** Enhancing my **MERN stack** projects with new features and optimizations  
+- **Passionate about:** Open Source, problem-solving, and learning cutting-edge technologies  
+- **Looking forward to:** Collaborating on exciting projects and contributing to the developer community  
+
 
 ---
 ### 🛠 Tech Stack & Skills

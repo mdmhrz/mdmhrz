@@ -1,4 +1,4 @@
-<a href="https://www.facebook.com/mdmhrz">
+<a target='_blank' href="https://www.linkedin.com/in/mdmhrz">
 <img src="https://raw.githubusercontent.com/mdmhrz/portfolio-assets/refs/heads/main/banner.svg" />
 </a>
 

@@ -19,7 +19,12 @@ Hi, I'm a passionate **Full-Stack Web Developer** with expertise in building mod
 ---
 ### 🛠 Tech Stack & Skills
 
-<p align='center'>[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb,tailwind,bootstrap,vite,npm,firebase,vscode,git,github,vercel,netlify,figma,ai,ps)](https://skillicons.dev)</p>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb,tailwind,bootstrap,vite,npm,firebase,vscode,git,github,vercel,netlify,figma,ai,ps" alt="My Skills" />
+  </a>
+</p>
+
 
 ---
 

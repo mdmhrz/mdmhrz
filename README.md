@@ -62,9 +62,9 @@ I’m committed to continuous learning and staying current with the evolving web
 
 </p>
 
-<a href="https://git.io/streak-stats">
+<p align="center">
 <img src="https://streak-stats.demolab.com?user=mdmhrz&theme=windows-dark&hide_border=true&background=90%2C000814%2C003566" alt="GitHub Streak" />
-</a>
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=pastel&cache_seconds=3600" alt="Top Languages" height="180px"/>

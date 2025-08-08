@@ -46,7 +46,7 @@ I'm a passionate **Full-Stack Web Developer** with expertise in building modern,
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mdmhrz&show_icons=true&theme=dark" alt="GitHub Stats" height="180px"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mdmhrz&theme=default" alt="GitHub Streak" height="180px"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mdmhrz&theme=dark" alt="GitHub Streak" height="180px"/>
 </p>
 
 <p align="center">

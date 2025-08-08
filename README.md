@@ -69,7 +69,7 @@ I’m committed to continuous learning and staying current with the evolving web
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=dark" alt="Top Languages" height="180px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=pastel&cache_seconds=3600" alt="Top Languages" height="180px"/>
 </p>
 
 

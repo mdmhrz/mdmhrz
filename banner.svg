@@ -1,0 +1,59 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark gradient background -->
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f2027"/>
+      <stop offset="0.5" stop-color="#203a43"/>
+      <stop offset="1" stop-color="#2c5364"/>
+    </linearGradient>
+
+    <!-- Shimmer gradient for text -->
+    <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0">
+        <animate attributeName="offset" values="-2; 1" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.6">
+        <animate attributeName="offset" values="-1; 2" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0">
+        <animate attributeName="offset" values="0; 3" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Particle blur -->
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg-gradient)"/>
+
+  <!-- Particles -->
+  <circle cx="200" cy="100" r="2" fill="white" opacity="0.7" filter="url(#blur)">
+    <animate attributeName="cx" values="200;1200" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100;50" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="200" r="2" fill="white" opacity="0.5" filter="url(#blur)">
+    <animate attributeName="cx" values="800;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="200;150" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Name -->
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle"
+    font-size="50" font-family="Segoe UI, sans-serif" fill="white" font-weight="bold">
+    Mobarak Hossain Razu
+  </text>
+
+  <!-- Tagline -->
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle"
+    font-size="28" font-family="Segoe UI, sans-serif" fill="white" opacity="0.85">
+    Web Developer | Frontend Developer | MERN Stack Specialist
+  </text>
+
+  <!-- Shimmer overlay -->
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle"
+    font-size="50" font-family="Segoe UI, sans-serif" font-weight="bold" fill="url(#shimmer)">
+    Mobarak Hossain Razu
+  </text>
+</svg>

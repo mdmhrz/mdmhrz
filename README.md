@@ -1,5 +1,5 @@
 <a target='_blank' href="https://www.linkedin.com/in/mdmhrz">
-<img src="https://raw.githubusercontent.com/mdmhrz/mdmhrz/refs/heads/main/banner.svg" />
+<img src="https://raw.githubusercontent.com/mdmhrz/mdmhrz/refs/heads/main/assets/banner.svg" />
 </a>
 
 

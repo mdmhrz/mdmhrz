@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/mdmhrz/portfolio-assets/refs/heads/main/banner.svg" />
 </a>
 
-# Hi, I'm **Mobarak Hossain Razu
+# Hi, I'm **Mobarak Hossain Razu**
 
 I’m a passionate **Full-Stack Web Developer** specializing in building **modern**, **responsive**, and **high-performance** web applications.  
 My tech stack includes:  

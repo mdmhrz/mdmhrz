@@ -59,7 +59,6 @@ I’m committed to continuous learning and staying current with the evolving web
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mdmhrz&show_icons=true&theme=dark" alt="GitHub Stats" height="180px"/>
-
 </p>
 
 <p align="center">

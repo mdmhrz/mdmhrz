@@ -41,10 +41,12 @@ Hi, I'm a passionate **Full-Stack Web Developer** with expertise in building mod
 ---
 
 ### 🌱 Currently Learning  
+- **Advanced Next.js** for building scalable and performant React applications.  
+- **Redux** for efficient state management in complex apps.  
+- **Python** for backend development, scripting, and data processing.  
 - **Advanced Node.js** for scalable backend development.  
 - **Cloud Deployment & DevOps** to improve application reliability and scalability.  
-- **TypeScript** for building more robust and maintainable applications.  
-
+- **TypeScript** for building more robust and maintainable applications. 
 ---
 
 ### 📊 GitHub Stats  

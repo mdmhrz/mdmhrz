@@ -1,0 +1,72 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, sans-serif">
+  <defs>
+    <!-- Dark gradient background -->
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000814" />
+      <stop offset="0.5" stop-color="#001d3d" />
+      <stop offset="1" stop-color="#003566" />
+    </linearGradient>
+
+    <!-- Particle glow filter -->
+    <filter id="glow-particle" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#0ff" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#0ff" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg-gradient)" />
+
+  <!-- Particles with glow and smooth animations -->
+  <circle cx="180" cy="100" r="3.5" fill="#00e5ff" opacity="0.7" filter="url(#glow-particle)">
+    <animate attributeName="cx" values="180;1180" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="100;65" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="600" cy="180" r="2.5" fill="#00c2ff" opacity="0.55" filter="url(#glow-particle)">
+    <animate attributeName="cx" values="600;40" dur="14s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="180;140" dur="7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="900" cy="120" r="4.2" fill="#0099cc" opacity="0.45" filter="url(#glow-particle)">
+    <animate attributeName="cx" values="900;10" dur="16s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="120;85" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="400" cy="50" r="1.8" fill="#33ccff" opacity="0.8" filter="url(#glow-particle)">
+    <animate attributeName="cx" values="400;1100" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="50;90" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1000" cy="220" r="2.7" fill="#00bfff" opacity="0.6" filter="url(#glow-particle)">
+    <animate attributeName="cx" values="1000;220" dur="15s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="220;170" dur="7.5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Name without shading -->
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle"
+        font-size="54" fill="white" font-weight="700" letter-spacing="1">
+    Md. Mobarak Hossain
+  </text>
+
+  <!-- Static designation below name -->
+  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle"
+        font-size="28" fill="#00e5ff" font-weight="600" letter-spacing="0.7">
+    Web Developer | Frontend Developer | MERN Stack Specialist
+  </text>
+
+  <!-- Contact info bottom-left with padding -->
+  <g transform="translate(20, 240)" font-size="18" fill="white" font-weight="600" letter-spacing="0.4">
+    <!-- Email icon -->
+    <path d="M2 6 L10 12 L18 6" stroke="white" stroke-width="1.5" fill="none" />
+    <rect x="1" y="3" width="18" height="10" rx="2" ry="2" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="25" y="9" dominant-baseline="middle" font-family="Segoe UI, sans-serif" font-size="18">
+      mdmobarakhossainrazu@gmail.com
+    </text>
+    <!-- Phone icon below email -->
+    <g transform="translate(0, 30)">
+      <circle cx="8" cy="8" r="7" stroke="white" stroke-width="1.5" fill="none" />
+      <path d="M5 11 L8 8 L11 11" stroke="white" stroke-width="1.5" fill="none" />
+      <path d="M8 8 L8 5" stroke="white" stroke-width="1.5" fill="none" />
+      <text x="25" y="9" dominant-baseline="middle" font-family="Segoe UI, sans-serif" font-size="18">
+        +880 1824975616
+      </text>
+    </g>
+  </g>
+</svg>

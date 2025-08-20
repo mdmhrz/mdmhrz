@@ -17,7 +17,7 @@ I’m committed to continuous learning and staying current with the evolving web
 
 ---
 
-### 🔗 [Checkout my portfolio website](https://razu-portfolio.netlify.app/)  
+### 🔗 [Checkout my portfolio website](https://mdmhrz.netlify.app/)  
 
 ---
 

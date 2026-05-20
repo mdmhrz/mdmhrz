@@ -4,60 +4,37 @@
 
 # Md. Mobarak Hossain
 
-Full Stack Developer with professional experience building SaaS platforms, commercial software products, and scalable web applications using React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.
+Frontend Developer at Xgenious with professional experience building SaaS platforms, commercial products, and full-stack web applications using React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.
 
-Currently working at Xgenious, where I contribute to production-grade SaaS products, Shopify applications, and commercial software solutions. Passionate about building reliable systems, designing intuitive user experiences, and delivering maintainable software that solves real business problems.
+Currently contributing to production-grade applications used by businesses worldwide while continuously expanding my expertise in backend development, cloud infrastructure, DevOps, and scalable software architecture.
 
 ---
 
 ## Professional Experience
 
-### Full Stack Developer — Xgenious
+### Frontend Developer — Xgenious
 **Dhaka, Bangladesh | July 2025 – Present**
 
-Developing scalable SaaS and commercial applications using modern web technologies.
+Working on SaaS and commercial web applications using Next.js, React, TypeScript, Zustand, Tailwind CSS, and ShadCN UI.
 
-#### Key Responsibilities
+#### Products
 
-- Building production-ready applications using Next.js, React, TypeScript, and Tailwind CSS
-- Developing reusable UI systems with ShadCN UI
-- Managing application state with Zustand
-- Integrating REST APIs and implementing secure authentication workflows
-- Designing scalable frontend architecture and business workflows
-- Maintaining clean, maintainable, and performance-focused codebases
+**Taskip** — https://taskip.app/
 
-#### Products & Contributions
-
-##### Taskip — Project Management Platform
-
-All-in-one SaaS client portal and project management software.
+All-in-one project management and client collaboration platform.
 
 - Developed Authentication and Onboarding systems
 - Built Sales Pipeline (Kanban CRM)
-- Developed Ticket Management modules
-- Implemented Dashboard functionality
-- Built scalable CRM workflows
-- Integrated secure APIs and optimized server-state management
+- Developed Ticket Management and Dashboard modules
+- Implemented scalable CRM workflows and API integrations
 
-**Stack:** Next.js, TypeScript, Zustand, ShadCN UI
+**Xilancer** — https://xilancer.xgenious.com/
 
-##### ReportGenix — Shopify Reporting Platform
+Freelance marketplace solution developed for commercial distribution.
 
-Reporting solution for Shopify merchants.
-
-- Developed Custom Report Builder modules
-- Built Automated Reporting workflows
-- Created dynamic reporting interfaces
-- Implemented data integration solutions
-
-**Stack:** React, Vite, TypeScript
-
-##### Commercial Products
-
-Contributed as Frontend Developer to multiple commercial software products, including:
-
-- Xilacer
-- Additional CodeCanyon products
+- Contributed to frontend development and feature implementation
+- Built reusable UI components and application workflows
+- Improved user experience and interface consistency
 
 ---
 
@@ -65,39 +42,26 @@ Contributed as Frontend Developer to multiple commercial software products, incl
 
 ### NexDrop — Parcel Delivery Management Platform
 
-A production-ready parcel delivery management platform built for Bangladesh with dedicated dashboards for Customers, Riders, Administrators, and Super Administrators.
-
 **Live:** https://nexdrop.mhrazu.com
 
-#### Highlights
+A full-stack parcel delivery platform built for Bangladesh with dedicated dashboards for customers, riders, administrators, and super administrators.
 
-- Role-based dashboards for Customer, Rider, Admin, and Super Admin
-- Real-time parcel tracking throughout the delivery lifecycle
+#### Key Features
+
+- Role-based dashboards and secure authentication
+- Real-time parcel tracking and delivery management
 - Stripe and SSLCommerz payment integration
-- Better Auth and JWT authentication
-- Rider earnings and cashout management system
-- Revenue analytics and operational reporting
-- AI-powered chatbot integration
-- Coverage support across all 64 districts of Bangladesh
-- Email verification and password recovery workflows
+- Rider earnings, cashout, and delivery workflows
+- Analytics dashboard and AI-powered chatbot
+- CI/CD deployment pipeline with Docker and AWS
 
-#### Architecture
+#### Tech Stack
 
-- Next.js 16 Frontend Application
-- Express.js REST API
-- PostgreSQL Database with Prisma ORM
-- Dockerized Infrastructure
-- Nginx Reverse Proxy
-- AWS EC2 Deployment
-- GitHub Actions CI/CD Pipeline
+**Frontend:** Next.js, React, TypeScript, Tailwind CSS, ShadCN UI
 
-#### Technologies
+**Backend:** Node.js, Express.js, PostgreSQL, Prisma ORM
 
-**Frontend:** Next.js, React, TypeScript, Tailwind CSS, ShadCN UI, TanStack Query, Recharts, Leaflet, Framer Motion
-
-**Backend:** Node.js, Express.js, TypeScript, Prisma ORM, PostgreSQL, Better Auth, Stripe, SSLCommerz, Zod
-
-**Infrastructure:** Docker, Docker Compose, Nginx, AWS EC2, Cloudflare, GitHub Actions, Let's Encrypt
+**Infrastructure:** Docker, Nginx, AWS EC2, Cloudflare, GitHub Actions
 
 ---
 
@@ -155,7 +119,7 @@ A production-ready parcel delivery management platform built for Bangladesh with
 </p>
 
 <p align="center">
-<img src="https://streak-stats.demolab.com?user=mdmhrz&theme=windows-dark&hide_border=true&background=90%2C000814%2C003566" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=mdmhrz&theme=windows-dark&hide_border=true&background=90%2C000814%2C003566" alt="GitHub Streak" />
 </p>
 
 <p align="center">

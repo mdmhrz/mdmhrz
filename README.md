@@ -58,7 +58,7 @@ I’m committed to continuous learning and staying current with the evolving web
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,nginx,aws,cloudflare,githubactions,linux,ubuntu,debian,git,github,npm,pnpm,postman,vscode,figma,ps,vercel,netlify,discord,ai,powershell&perline=11" />
+    <img src="https://skillicons.dev/icons?i=docker,nginx,aws,cloudflare,githubactions,linux,ubuntu,debian,git,github,npm,pnpm,postman,vscode,figma,ps,vercel,netlify,discord,ai,powershell,bash&perline=11" />
   </a>
 </p>
 

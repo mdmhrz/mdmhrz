@@ -32,7 +32,7 @@ I’m committed to continuous learning and staying current with the evolving web
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb,tailwind,bootstrap" alt="My Skills" />
+    <img src="https://skillicons.dev/icons?i=docker,html,css,js,react,nextjs,nodejs,express,mongodb,tailwind,bootstrap" alt="My Skills" />
   </a>
 </p>
 <p align="center">

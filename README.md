@@ -2,33 +2,106 @@
 <img src="https://raw.githubusercontent.com/mdmhrz/mdmhrz/refs/heads/main/assets/banner.svg" />
 </a>
 
+# Md. Mobarak Hossain
 
-Hi, I’m a passionate **Frontend / Web Developer** specializing in building **modern**, **responsive**, and **high-performance** web applications that deliver seamless user experiences. I focus on crafting scalable, maintainable solutions using the MERN stack and the latest frontend technologies. From designing intuitive user interfaces with React and Tailwind CSS to writing clean, efficient code, my goal is to optimize applications for speed, accessibility, and user engagement.
+Full Stack Developer with professional experience building SaaS platforms, commercial software products, and scalable web applications using React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.
 
-I’m committed to continuous learning and staying current with the evolving web ecosystem. Whether collaborating with teams or contributing to open-source projects, I strive to build impactful software that solves real-world problems and creates delightful digital experiences.
-
-
----
-
-### 🚀 About Me
-- 💡 **Passionate** about building performant and accessible web apps  
-- 🌱 Active **open-source contributor** and lifelong learner  
-- 🎨 Strong interest in **UI/UX design** and frontend architecture  
+Currently working at Xgenious, where I contribute to production-grade SaaS products, Shopify applications, and commercial software solutions. Passionate about building reliable systems, designing intuitive user experiences, and delivering maintainable software that solves real business problems.
 
 ---
 
-### 🔗 [Checkout my portfolio website](https://mdmhrz.netlify.app/)  
+## Professional Experience
+
+### Full Stack Developer — Xgenious
+**Dhaka, Bangladesh | July 2025 – Present**
+
+Developing scalable SaaS and commercial applications using modern web technologies.
+
+#### Key Responsibilities
+
+- Building production-ready applications using Next.js, React, TypeScript, and Tailwind CSS
+- Developing reusable UI systems with ShadCN UI
+- Managing application state with Zustand
+- Integrating REST APIs and implementing secure authentication workflows
+- Designing scalable frontend architecture and business workflows
+- Maintaining clean, maintainable, and performance-focused codebases
+
+#### Products & Contributions
+
+##### Taskip — Project Management Platform
+
+All-in-one SaaS client portal and project management software.
+
+- Developed Authentication and Onboarding systems
+- Built Sales Pipeline (Kanban CRM)
+- Developed Ticket Management modules
+- Implemented Dashboard functionality
+- Built scalable CRM workflows
+- Integrated secure APIs and optimized server-state management
+
+**Stack:** Next.js, TypeScript, Zustand, ShadCN UI
+
+##### ReportGenix — Shopify Reporting Platform
+
+Reporting solution for Shopify merchants.
+
+- Developed Custom Report Builder modules
+- Built Automated Reporting workflows
+- Created dynamic reporting interfaces
+- Implemented data integration solutions
+
+**Stack:** React, Vite, TypeScript
+
+##### Commercial Products
+
+Contributed as Frontend Developer to multiple commercial software products, including:
+
+- Xilacer
+- Additional CodeCanyon products
 
 ---
 
-### 🔥 What I’m up to  
-- **Currently working on:** Enhancing my **MERN stack** projects with new features and optimizations  
-- **Passionate about:** Open Source, problem-solving, and learning cutting-edge technologies  
-- **Looking forward to:** Collaborating on exciting projects and contributing to the developer community  
+## Featured Project
 
+### NexDrop — Parcel Delivery Management Platform
+
+A production-ready parcel delivery management platform built for Bangladesh with dedicated dashboards for Customers, Riders, Administrators, and Super Administrators.
+
+**Live:** https://nexdrop.mhrazu.com
+
+#### Highlights
+
+- Role-based dashboards for Customer, Rider, Admin, and Super Admin
+- Real-time parcel tracking throughout the delivery lifecycle
+- Stripe and SSLCommerz payment integration
+- Better Auth and JWT authentication
+- Rider earnings and cashout management system
+- Revenue analytics and operational reporting
+- AI-powered chatbot integration
+- Coverage support across all 64 districts of Bangladesh
+- Email verification and password recovery workflows
+
+#### Architecture
+
+- Next.js 16 Frontend Application
+- Express.js REST API
+- PostgreSQL Database with Prisma ORM
+- Dockerized Infrastructure
+- Nginx Reverse Proxy
+- AWS EC2 Deployment
+- GitHub Actions CI/CD Pipeline
+
+#### Technologies
+
+**Frontend:** Next.js, React, TypeScript, Tailwind CSS, ShadCN UI, TanStack Query, Recharts, Leaflet, Framer Motion
+
+**Backend:** Node.js, Express.js, TypeScript, Prisma ORM, PostgreSQL, Better Auth, Stripe, SSLCommerz, Zod
+
+**Infrastructure:** Docker, Docker Compose, Nginx, AWS EC2, Cloudflare, GitHub Actions, Let's Encrypt
 
 ---
-### 🛠 Tech Stack & Skills
+
+## Tech Stack & Skills
 
 #### Languages
 
@@ -62,21 +135,20 @@ I’m committed to continuous learning and staying current with the evolving web
   </a>
 </p>
 
+---
+
+## Currently Learning
+
+- Advanced Go for backend services and concurrent programming
+- Scalable system architecture and backend design patterns
+- Cloud infrastructure and deployment automation
+- Advanced DevOps workflows and containerized environments
+- AI integrations and modern developer tooling
+- Performance optimization for large-scale applications
 
 ---
 
-
-
-### 🌱 Currently Learning  
-- **Advanced Next.js** for building scalable and performant React applications.  
-- **Redux** for efficient state management in complex apps.  
-- **Python** for backend development, scripting, and data processing.  
-- **Advanced Node.js** for scalable backend development.  
-- **Cloud Deployment & DevOps** to improve application reliability and scalability.  
-- **TypeScript** for building more robust and maintainable applications. 
----
-
-### 📊 GitHub Stats  
+## GitHub Statistics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mdmhrz&show_icons=true&theme=dark" alt="GitHub Stats" height="180px"/>
@@ -90,18 +162,14 @@ I’m committed to continuous learning and staying current with the evolving web
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdmhrz&layout=compact&theme=dark&cache_seconds=3600" alt="Top Languages" height="180px"/>
 </p>
 
-
-
 ---
 
-### 🤝 Connect with Me  
+## Contact
+
+Portfolio Website: https://mhrazu.com
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mdmhrz)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mdmhrz)
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/mdmhrz)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](https://github.com/mdmhrz)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](https://mhrazu.com)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mdmobarakhossainrazu@gmail.com)
-
----
-
-⭐ **If you like my work, consider giving a star to my repositories!** ⭐  

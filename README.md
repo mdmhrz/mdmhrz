@@ -32,12 +32,25 @@ I’m committed to continuous learning and staying current with the evolving web
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,html,css,js,react,nextjs,nodejs,express,mongodb,tailwind,bootstrap" alt="My Skills" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,vite,figma&perline=9" />
   </a>
 </p>
+
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=vite,npm,firebase,vscode,git,github,vercel,netlify,figma,ai" alt="My Skills" />
+    <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,prisma,firebase&perline=6" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,linux,ubuntu,cloudflare,vercel,netlify,githubactions,aws&perline=8" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,pnpm,npm,postman,vscode,ai,go&perline=8" />
   </a>
 </p>
 

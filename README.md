@@ -30,27 +30,35 @@ I’m committed to continuous learning and staying current with the evolving web
 ---
 ### 🛠 Tech Stack & Skills
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,vite,figma&perline=9" />
-  </a>
-</p>
+## Languages
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,prisma,firebase&perline=6" />
+    <img src="https://skillicons.dev/icons?i=js,ts,go&perline=3" />
   </a>
 </p>
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,linux,ubuntu,cloudflare,vercel,netlify,githubactions,aws&perline=8" />
-  </a>
-</p>
+## Frontend
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,pnpm,npm,postman,vscode,ai,go&perline=8" />
+    <img src="https://skillicons.dev/icons?i=html,css,react,tailwind,bootstrap,sass,vite,webpack&perline=8" />
+  </a>
+</p>
+
+## Backend & Database
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,postgres,prisma&perline=6" />
+  </a>
+</p>
+
+## DevOps & Tools
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,nginx,aws,cloudflare,githubactions,linux,ubuntu,debian,git,github,npm,pnpm,postman,vscode,figma,ps,vercel,netlify,discord,ai,powershell&perline=11" />
   </a>
 </p>
 

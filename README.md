@@ -30,7 +30,7 @@ I’m committed to continuous learning and staying current with the evolving web
 ---
 ### 🛠 Tech Stack & Skills
 
-## Languages
+#### Languages
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -38,7 +38,7 @@ I’m committed to continuous learning and staying current with the evolving web
   </a>
 </p>
 
-## Frontend
+#### Frontend
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -46,7 +46,7 @@ I’m committed to continuous learning and staying current with the evolving web
   </a>
 </p>
 
-## Backend & Database
+#### Backend & Database
 
 <p align="center">
   <a href="https://skillicons.dev">

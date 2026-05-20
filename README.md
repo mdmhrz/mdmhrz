@@ -1,9 +1,6 @@
 <a target='_blank' href="https://www.linkedin.com/in/mdmhrz">
 <img src="https://raw.githubusercontent.com/mdmhrz/mdmhrz/refs/heads/main/assets/banner.svg" />
 </a>
-
-# Md. Mobarak Hossain
-
 Frontend Developer at Xgenious with professional experience building SaaS platforms, commercial products, and full-stack web applications using React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.
 
 Currently contributing to production-grade applications used by businesses worldwide while continuously expanding my expertise in backend development, cloud infrastructure, DevOps, and scalable software architecture.

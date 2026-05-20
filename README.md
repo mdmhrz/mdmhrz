@@ -42,7 +42,7 @@ I’m committed to continuous learning and staying current with the evolving web
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,react,tailwind,bootstrap,sass,vite,webpack&perline=8" />
+    <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind,bootstrap,sass,vite,webpack&perline=8" />
   </a>
 </p>
 
